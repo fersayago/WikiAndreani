@@ -25,7 +25,7 @@
           </li>
           <li class="nav-item dropdown">
             <!-- ! NO FUNCIONA EL DROPDOWN-->
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle" href="#proyectos" id="navbarDropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Proyectos
             </a>
@@ -65,9 +65,46 @@
     </div>
   </nav>
 
+  <section id="slider">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class=" w-100" src="IMG/slider1.jpeg" alt="First slide">
+          <div class="carousel-caption">
+            <h3 class="d-block">Una empresa que pone a las personas primero</h3>
+          </div>
+        </div>
+        <div class="carousel-item"> 
+          <img class="d-block w-100" src="IMG/slider2.jpg" alt="Second slide">
+          <div class="carousel-caption">
+            <h3 class="d-block">Una empresa con innovacion constante</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="IMG/slider.jpg" alt="Third slide">
+          <div class="carousel-caption">
+            <h3 class="d-block">Una empresa que con las mejores soluciones logisticas</h3>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="proyectos">
   <div class="container">
-    <h1 id="#MiAndreani">Mi Andreani</h1>
-    <!-- TODO: INSERTAR DOC MI ANDREANI-->
+    <h1 id="MiAndreani">Mi Andreani</h1>
+    
     <h4>Objetivos y alcance</h4>
     <p>
       El objetivo de este documento es entregar una especificación de la
@@ -76,8 +113,8 @@
     </p>
     <h4>Definiciones</h4>
     <p>Al ingresar a la aplicación, se procede al login</p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen1.png" alt=""/>
+    
+    <img src="IMG/Imagen1.png" alt="" class="mx-auto d-block"/>
 
     <p>
       <strong>● Login:</strong>
@@ -91,14 +128,14 @@
       ingresado no corresponde a ningún colaborador, no permite crear la
       cuenta informando que no es un Usuario que pertenece a Andreani. Esto se
       lleva a cabo para guardar las declaraciones juradas y tener un contacto
-      a quien asignarla.
+      a quien asignarla. 
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen2.png" alt="" />
+    
+    <img src="IMG/Imagen2.png" alt="" class="mx-auto d-block"/>
 
     <p><strong>● Test de Covid-19:</strong></p>
-      <!-- TODO: COMPLETAR IMAGEN-->
-      <img src="IMG/Imagen3.png" alt="" />
+      
+      <img src="IMG/Imagen3.png" alt="" class="mx-auto d-block"/>
 
      <p>A nivel funcional es un test que debe realizar el usuario para
       determinar si está APTO o NO APTO para ingresar a la planta, es decir,
@@ -106,8 +143,8 @@
       lugar, debe indicar la temperatura corporal y si tomó algún medicamento
       para bajar la temperatura
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen4.png" alt="" />
+    
+    <img src="IMG/Imagen4.png" alt="" class="mx-auto d-block"/>
     <p>
       El usuario no estará apto si la temperatura es mayor a 37.3° o tomó
       algún medicamento Luego debe responder una serie de preguntas y
@@ -115,48 +152,48 @@
       - Identificar si presenta determinados síntomas de
       Covid-19
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen5.png" alt="" />
+    
+    <img src="IMG/Imagen5.png" alt="" class="mx-auto d-block"/>
     <p>
       Si presenta al menos 2 síntomas el usuario no estará apto para ingresar a planta.
       - Si tuvo contacto Riesgoso
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen6.png" alt="" />
+    
+    <img src="IMG/Imagen6.png" alt="" class="mx-auto d-block"/>
     <p>
       Si el usuario estuvo en contacto fuera del ámbito laboral con algún sospechoso o si alguien con quien convive
       estuvo en contacto con algún sospechoso no podrá ingresar a planta.
       - Confirmación de datos personales
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen7.png" alt="" />
+    
+    <img src="IMG/Imagen7.png" alt="" class="mx-auto d-block"/>
     <p>
       - En qué domicilio estuvo el día anterior, esta información es requerida porque en caso de que el usuario no esté
       apto para ingresar a trabajar, los médicos deberán recibir dicha información del Backend para comunicarse con él o
       bien acercarse al domicilio en el cual se encuentre para proseguir con el protocolo ante dicha situación.
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen8.png" alt="" />
+    
+    <img src="IMG/Imagen8.png" alt="" class="mx-auto d-block"/>
     <p>
       - Confirmar información personal
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen9.png" alt="" />
+    
+    <img src="IMG/Imagen9.png" alt="" class="mx-auto d-block"/>
     <p>
       Esta información será alojada y analizada en el Backend, de modo que éste determinará si el usuario está APTO o NO
       APTO para ir a trabajar a través de la tarjeta visualizada en la sección correspondiente de la aplicación
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen10.png" alt="" />
+    
+    <img src="IMG/Imagen10.png" alt="" class="mx-auto d-block"/>
 
     <p>
-      <strong>● Premiacion:</strong>En agradecimiento al Trabajo llevado a
+      <strong>● Premiacion:</strong> En agradecimiento al Trabajo llevado a
       cabo por el usuario, en el home se puede visualizar una sección que
       premia al usuario con una fotografía que el mismo deberá subir,
       ingresando a “enviar foto”
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen11.png" alt="" />
+    
+    <img src="IMG/Imagen11.png" alt="" class="mx-auto d-block"/>
 
     <p>
       De este modo, la aplicación lo redirecciona a WhatsApp Web en caso de
@@ -167,20 +204,20 @@
       usuario tomada del Backend en el cual se habían adjuntado los datos del
       login.
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen12.png" alt="" />
+    
+    <img src="IMG/Imagen12.png" alt="" class="mx-auto d-block"/>
 
     <p>
-      <strong>● 75 años – Conectamos lo que importa:</strong>Esta sección hace
+      <strong>● 75 años – Conectamos lo que importa:</strong> Esta sección hace
       referencia al Aniversario de Andreani, en la cual los usuarios podrán
       ingresar a “conocer más”
     </p>
-    <!-- TODO: COMPLETAR IMAGEN-->
-    <img src="IMG/Imagen13.png" alt="" />
+    
+    <img src="IMG/Imagen13.png" alt="" class="mx-auto d-block"/>
 
     <br>
 
-    <p<>De esta manera podrá visualizar la landing de la aplicación y su contenido estático, es decir, imágenes, videos
+    <p>De esta manera podrá visualizar la landing de la aplicación y su contenido estático, es decir, imágenes, videos
       y texto. Además, allí encontrarán desplegado el concurso de fotos y la sección videos testimonio.
       A partir de la incorporación de la tarjeta de 75 años para dirigirse a la landing se integró un CMS, es decir un
       gestor de contenido. Dicho CMS brinda la posibilidad de que haya un usuario que pueda ir cargando contenido por
@@ -204,21 +241,21 @@
       distintas capacidades del dispositivo.
       </p>
 
-      <img src="IMG/Imagen14.png" alt="" />
+      <img src="IMG/Imagen14.png" alt="" class="mx-auto d-block"/>
 
       <br>
       <br>
 
       <p><strong>● Funcionalidad técnica de la API:</strong>
 
-        <hr />
-      <h3 >Nos envían </h3>
+        <hr/>
+      <p><strong>Nos envían</strong></p>
       <ul class="bulleted-list">
         <li>
           (contact &gt; new_DNIcolaborador)
         </li>
       </ul>
-      <h3 >Le devolvemos</h3>
+      <p><strong>Le devolvemos</strong></p>
       <ol class="numbered-list" start="1">
         <li>Si hay un colaborador con ese DNI, le enviamos
           <ul class="bulleted-list">
@@ -231,85 +268,85 @@
               (anrrhh_declaracionjuradacovid &gt; anrrhh_Fechadevencimiento)
             </li>
           </ul>
-          <ul id="d8079ea4-2af2-4bfd-972a-07a700ce7d69" class="bulleted-list">
+          <ul class="bulleted-list">
             <li>(contact &gt; fullname)</li>
           </ul>
-          <ul id="84dfbd46-04d1-4616-bbad-bf308b621d99" class="bulleted-list">
+          <ul class="bulleted-list">
             <li>(contact &gt; emailaddress1)</li>
           </ul>
-          <ul id="79773c92-02d4-4e7a-ac02-ab78c927740d" class="bulleted-list">
+          <ul class="bulleted-list">
             <li>(contact &gt; new_tipodecontacto)</li>
           </ul>
-          <ul id="45cdae31-a89a-48b8-b523-c689c855b77a" class="bulleted-list">
+          <ul class="bulleted-list">
             <li>(contact &gt; new_sector)</li>
           </ul>
-          <ul id="4c16b5bc-e018-45c8-98d2-f587413b05e1" class="bulleted-list">
+          <ul class="bulleted-list">
             <li>(contact &gt; mobilephone)</li>
           </ul>
         </li>
       </ol>
-      <ol id="40a7bc98-5745-44ea-aa2c-946ad4ec05fd" class="numbered-list" start="2">
+      <ol class="numbered-list" start="2">
         <li>Si no hay un colaborador con ese DNI, le enviamos algún codigo de error o inexistente.</li>
       </ol>
-      <hr id="a4d19cf6-b4a7-44bc-bbfd-6e5e5639a2a1" />
-      <h3 id="0654dacd-5bed-4a88-9bd9-ba271c4204a1" >Nos envian</h3>
-      <p id="58d7ee8a-ee61-4508-8505-0139e62299a7" >{</p>
-      <p id="65bc45ec-eda0-4986-a57d-e9f3a151d9e4" >temperatura: 36, </p>
-      <ul id="5a3725f8-8e1a-4670-8cb8-c929b21d4f64" class="bulleted-list">
+      <hr/>
+      <p><strong>Nos envían</strong></p>
+      <p>{</p>
+      <p>temperatura: 36, </p>
+      <ul class="bulleted-list">
         <li>anrrhh_declaracionjuradacovid<ul id="eca2bcc5-3539-4139-8c31-a5baa05e1da6" class="bulleted-list">
             <li>anrrhh_temperaturacorporal (número decimal con 2 decimales)</li>
           </ul>
         </li>
       </ul>
-      <p id="321f0ac5-fc77-410c-9e66-ae7a59cf2ebd" >medicacion: false, </p>
-      <ul id="50cb0547-e8c1-427d-8c8e-bcb83beb0b9f" class="bulleted-list">
-        <li>anrrhh_declaracionjuradacovid <ul id="fbee65a4-615f-44b4-8ec0-78be899aff98" class="bulleted-list">
-            <li>anrrhh_tomomedicamentos (optionset)<ul id="875fbc31-5a3f-4f24-8f62-1add977dab92" class="bulleted-list">
+      <p >medicacion: false, </p>
+      <ul class="bulleted-list">
+        <li>anrrhh_declaracionjuradacovid <ul class="bulleted-list">
+            <li>anrrhh_tomomedicamentos (optionset)<ul class="bulleted-list">
                 <li>Sí → 785.630.000</li>
               </ul>
-              <ul id="c5230fb4-3691-4a41-9bb3-cce9e72f4fda" class="bulleted-list">
+              <ul class="bulleted-list">
                 <li>No → 785.630.001</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
-      <p id="dca11c7c-71c6-47a3-b594-b82920ee1ba6" >sintomas: {</p>
-      <p id="e5fe044e-b1e9-4ea0-a5d4-ebbb17dd1496" >tos: false,</p>
-      <ul id="91978f33-76f6-4c80-b4a4-7e3dda85e179" class="bulleted-list">
-        <li>anrrhh_sintomatos (optionset)<ul id="fa87fdab-966d-412a-a74f-e9615c418edc" class="bulleted-list">
+      <p >sintomas: {</p>
+      <p >tos: false,</p>
+      <ul class="bulleted-list">
+        <li>anrrhh_sintomatos (optionset)<ul class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="7640f586-b900-45c5-8187-d37eaf2c7782" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
       </ul>
-      <p id="35181a88-d8d2-41d8-bc5f-40ad6a21fd15" >dolorGarganta: false,</p>
-      <ul id="924c8bcf-9a35-49db-819a-f4959e5df48f" class="bulleted-list">
-        <li>anrrhh_sintomadolordegarganta (optionset)<ul id="bef7bca3-ea21-4afe-ad89-25582bafaf08"
+      <p  >dolorGarganta: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_sintomadolordegarganta (optionset)<ul 
             class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="be24315e-345b-4835-b165-328fe0b20e9a" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
       </ul>
-      <p id="8d88e324-fafa-4f7b-99bf-5fa155c1074e" >dificultadRespiratoria: false,</p>
-      <ul id="61242229-58b2-4e08-b52e-5d4ce9194153" class="bulleted-list">
-        <li>anrrhh_sintomadificultadrespiratoria (optionset)<ul id="082364c7-dbcd-4af0-87d7-786e5baa88c4"
+      <p  >dificultadRespiratoria: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_sintomadificultadrespiratoria (optionset)<ul 
             class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="db22fa81-4922-4031-b12c-2f6e9adfb601" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
       </ul>
-      <p id="6e79edd8-fe5e-4f18-9104-148a142eb872" >perdidaOlfato: false,</p>
-      <ul id="f5d2859f-7e13-4665-87f8-bc8ee62c5b37" class="bulleted-list">
-        <li>anrrhh_sintomaperdidadeolfato (optionset)<ul id="4bc2f276-a459-4a1b-a573-24915a59b25e"
+      <p  >perdidaOlfato: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_sintomaperdidadeolfato (optionset)<ul 
             class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
@@ -319,90 +356,90 @@
         </li>
       </ul>
       <p >perdidaGusto: false</p>
-      <ul id="9e461ace-c748-4e89-bb72-fddb6f7e3800" class="bulleted-list">
-        <li>anrrhh_sintomaperdidadegusto (optionset)<ul id="3cb5cb63-c5d5-46c8-bdf0-7056ea261f47" class="bulleted-list">
+      <ul  class="bulleted-list">
+        <li>anrrhh_sintomaperdidadegusto (optionset)<ul  class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="752c37fe-7e7c-4172-b70c-6059c0493805" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
       </ul>
-      <p id="9764485d-f2e8-4935-b6bc-ffe9fbbd2a3e" >},</p>
-      <p id="cce27d1f-58f6-4008-be5a-8940f115919b" >contactoRiesgoso: false,</p>
-      <ul id="1de94e3e-c3cd-4e3c-b620-33e092f4a375" class="bulleted-list">
-        <li>anrrhh_contactoprimergrado (optionset)<ul id="922f858a-27c3-4215-b658-a6a0a712b303" class="bulleted-list">
+      <p  >},</p>
+      <p  >contactoRiesgoso: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_contactoprimergrado (optionset)<ul  class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="717927c9-9b02-4245-9dc1-8110fefc2aad" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
       </ul>
-      <p id="7cb55140-83f4-468c-b1e9-b9eb7b8f67b4">contactoRiesgosoIndirecto: false,</p>
-      <ul id="f9dab83d-6fe5-471f-b400-e9e1acfc5f46" class="bulleted-list">
-        <li>anrrhh_contactosegundogrado (optionset)<ul id="ec960f41-14b2-4a4f-8045-ec97eb47406f" class="bulleted-list">
+      <p >contactoRiesgosoIndirecto: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_contactosegundogrado (optionset)<ul  class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="414c36a4-53dd-40af-ab3f-5a214242d1f8" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
       </ul>
-      <p id="9912b9bf-2d6f-493d-9934-3beb18ed2bf4">verificacionDatos: false,</p>
-      <ul id="9ee87c44-cc40-4b5e-940c-d23cc4a09c16" class="bulleted-list">
-        <li>anrrhh_datoscorrectos (optionset)<ul id="56735e89-5641-4b7b-bfc0-6ad0a9dec3fe" class="bulleted-list">
+      <p >verificacionDatos: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_datoscorrectos (optionset)<ul  class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="8d06e09a-34b4-4d94-b170-e501a678bcc1" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
-          <p id="6ca1901c-feb3-4f31-b42a-bec106fec068"><strong>Domicilio Actual</strong></p>
+          <p ><strong>Domicilio Actual</strong></p>
         </li>
       </ul>
-      <p id="3c9dc940-38c3-4284-b57a-e1db14df53ae">domicilioActual: {</p>
-      <p id="304c5fad-9cd2-44fe-ac78-d2964a3b77bd">provincia: &#x27;&#x27;,</p>
-      <ul id="795d8cb2-9f61-4057-91f6-80964e757055" class="bulleted-list">
+      <p >domicilioActual: {</p>
+      <p >provincia: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_provinciatexto (texto 1000 caracteres)</li>
       </ul>
-      <p id="0889128b-72a4-4ab1-8534-53fa8b586de1">localidad: &#x27;&#x27;,</p>
-      <ul id="49a84c19-0aa8-43b3-81d8-6ddd02ec78f7" class="bulleted-list">
+      <p >localidad: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_localidad (texto 1000 caracteres)</li>
       </ul>
-      <p id="62b87951-9eaf-4c2f-b854-c5bc887fb688">codigoPostal: &#x27;&#x27;,</p>
-      <ul id="a3d8d723-88d2-4544-a287-68f85e9cbf0a" class="bulleted-list">
+      <p >codigoPostal: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_cp (número entero)</li>
       </ul>
-      <p id="5d87cbd0-93b6-47af-903d-bfc5796aaae0">calle: &#x27;&#x27;,</p>
-      <ul id="21183c31-4193-4dee-9986-d3af1ef1ee2a" class="bulleted-list">
+      <p >calle: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_calle (texto 1000 caracteres)</li>
       </ul>
-      <p id="4b97ed96-0bd6-49a7-80be-d216d000097a">numero: &#x27;&#x27;,</p>
-      <ul id="bc7b9b77-1a10-4ee5-80a5-1a9becaed60a" class="bulleted-list">
+      <p >numero: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_altura (número entero)</li>
       </ul>
-      <p id="7c681cb7-fff0-4567-85a1-6f20f49cb445">piso: &#x27;&#x27;,</p>
-      <ul id="af97f153-fda7-4c2b-9461-32ec912e668a" class="bulleted-list">
+      <p >piso: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_piso (número entero)</li>
       </ul>
-      <p id="35bd8504-aa56-439f-929e-07f1b740899d">departamento: &#x27;&#x27;,</p>
-      <ul id="fa967e83-acf9-4ee8-8c44-a4a8d14c5f73" class="bulleted-list">
+      <p >departamento: &#x27;&#x27;,</p>
+      <ul  class="bulleted-list">
         <li>anrrhh_domicilioactual_departamento (texto 100 caracteres)</li>
       </ul>
-      <p id="913941b7-81dd-4a6e-8b52-0ff3fb6662d7">datosAdicionales: &#x27;&#x27;
+      <p >datosAdicionales: &#x27;&#x27;
       <div class="indented">
-        <ul id="96cd6eca-654b-487f-ab87-52e6723d2baf" class="bulleted-list">
+        <ul  class="bulleted-list">
           <li>anrrhh_domicilioactual_obs (texto 1000 caracteres)</li>
         </ul>
       </div>
       </p>
-      <p id="7a21ec98-be75-422b-a107-383c402e6202">},</p>
-      <p id="5136dd16-be7f-4e27-a765-5ef34490ce04">unidadDesinfectada: false,</p>
-      <ul id="6124abdd-141d-4358-9374-7778445d262d" class="bulleted-list">
-        <li>anrrhh_desinfectounidad (optionset)<ul id="8b925b7a-db98-488a-bed4-ffa5ff19a7db" class="bulleted-list">
+      <p >},</p>
+      <p >unidadDesinfectada: false,</p>
+      <ul  class="bulleted-list">
+        <li>anrrhh_desinfectounidad (optionset)<ul  class="bulleted-list">
             <li>Sí → 785.630.000</li>
           </ul>
-          <ul id="0108a43e-4063-4c94-ae0f-e65b16bbfb1b" class="bulleted-list">
+          <ul  class="bulleted-list">
             <li>No → 785.630.001</li>
           </ul>
         </li>
@@ -410,14 +447,14 @@
       <p></p>
       <p>
       </p>
-      <h3>Le devolvemos<strong>:</strong></h3>
+      <p><strong>Le devolvemos</strong></p>
       <p>anrrhh_declaracionjuradacovid</p>
       <p>→ anrrhh_EstaApto</p>
       <p>→ anrrhh_Fechadevencimiento</p>
       <p>
 
   </div>
-
+</section>
   <div class="container">
     <h1>Roles de Seguridad</h1>
     <!--TODO: INSERTAR ROLES DE SEGURIDAD-->
