@@ -11,6 +11,9 @@
 </head>
 
 <body>
+
+<!-- NAV -->
+
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #c5171d">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">GDP Wiki</a>
@@ -24,7 +27,6 @@
             <a class="nav-link active" aria-current="page" href="#Home">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <!-- ! NO FUNCIONA EL DROPDOWN-->
            <a class="nav-link dropdown-toggle" href="#Proyectos" id="navbarDropdownMenuLink" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
               Proyectos
@@ -65,6 +67,8 @@
     </div>
   </nav>
 
+<!-- CAROUSEL -->
+
  <div class= container>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <ol class="carousel-indicators">
@@ -102,6 +106,8 @@
       </a>
     </div>
  </div>
+
+<!-- MI ANDREANI -->
 
   <section id="Proyectos">
   <div class="container">
@@ -247,6 +253,8 @@
 
       <br>
       <br>
+
+      <!-- FUNCIONALIDAD DE LA API -->
 
       <p><strong>● Funcionalidad técnica de la API:</strong>
 
@@ -461,6 +469,205 @@
   <div class="container">
     <h1>Roles de Seguridad</h1>
     <!--TODO: INSERTAR ROLES DE SEGURIDAD-->
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Creacion de soluciones y campos</h1>
+
+        <h4>Objetivos y alcance:</h4>
+        <p>
+          El objetivo de este documento es entregar una especificación de todos los pasos que se realizan en el proceso de evaluación de desempeño. 
+          Dentro del portal de Dynamics, en la sección “Matriz de calibración” se realiza una Pre-calibración en donde se evalúa la contribución y competencia de cada colaborador, luego se lleva a cabo la calibración por los HRBPs en la cual hacen una evaluación final. 
+        </p>
+        <h4>Definiciones:</h4>
+        <p><strong>Pasos en el proceso de evaluación</strong></p>
+        <p>El evaluador recibe un mail en su casilla informandole que ya está disponible la primera etapa en la evaluación de desempeño. Una vez ingresado en el portal debe elegir la opción “matriz de calibración” que se encuentra dentro de la pestaña LLC.</p>
+     
+          <img src="IMG/Imagen15.png" alt="">
+
+          <br>
+          <br>
+          <br>
+        
+        <h5>Flujos de trabajo dentro de Evaluación de Desempeño</h5>
+
+        <br>
+
+        <p><strong>Proceso: Evaluación de desempeño -0- Actualiza datos desde el legajo</strong></p>
+        <ul>
+           <li>   Actualiza datos del colaborador desde el legajo</li>
+           <li>   Comprueba nombre y apellido</li>
+                <ul>
+                <li>Si nombre y apellido contiene datos, entonces actualiza el campo “Legajo Nro”</li>
+                </ul>
+           <li>   Compone nombre o id</li>
+           <li>Comprueba el año</li>
+           <ul>
+           <li>Si el periodo es igual a [2018 - 2019], entonces: Detiene el flujo de trabajo con el estado de:  Correcto</li>
+           <li>De lo contrario, si el periodo de la evaluación de desempeño es igual a [2020], entonces: Actualiza la campaña (la evaluación de desempeño) y actualiza la última evaluación desempeño en el contacto (Nombre y Apellido del colaborador)</li>
+          </ul>
+        </ul>
+
+       <p><strong>Proceso: Evaluación de desempeño -1- Crea preguntas y conversación de contribución</strong></p>
+
+       <ul>
+          <li>Recalcular cantidad de preguntas</li> 
+          <li>Comprobar cantidad de preguntas</li>  
+       <ul> 
+
+       <li>Si el período de la evaluación de desempeño no es igual a [2020], O la cantidad de preguntas en Competencias es > [0], O el Estado no es igual a [Calibrada; No se Calibra], entonces: Detener flujo de trabajo con el estado de:  Correcto</li> 
+       <li>De lo contrario, si el período de la evaluación de desempeño es igual a [2020] y el Estado es igual a [Calibrada; No se Calibra],</li>
+      </ul> 
+      <ul>
+         Y si la cantidad de preguntas en Competencias no contiene datos O la cantidad de preguntas en Competencias es < [1], entonces:
+          <ul>
+              <li>Crear dentro de Competencia: 0. Compromiso</li>
+              <li>Crear dentro de Competencia: 1. Orientación a la calidad</li>
+              <li>Crear: Conversación sobre contribución</li>
+              <li>Comprobar perfil de evaluación y crear competencias</li>
+          </ul>
+      </ul>
+
+      <ul>
+       <li>Si el Perfil de evaluación es [COMERCIAL; LÍDER COMERCIAL; LÍDER OPERACIÓN COMERCIAL], entonces:</li>
+          <ul>
+              <li>Crear dentro de Competencia: 3. Conocimiento del mercado</li>
+              <li>Crear dentro de Competencia: 4. Mirada al cliente</li>
+              <li>Crear dentro de Competencia: 5. Orientación a los resultados</li>
+          </ul>
+      </ul>
+
+      <ul>
+       <li>De lo contrario, si el Perfil de evaluación es [LÍDER STAFF; STAFF], entonces:</li>
+          <ul>
+              <li>Crear dentro de Competencia: 6. Desarrollo de relaciones / influencia</li>
+              <li>Crear dentro de Competencia: 7. Colaboración</li>
+              <li>Crear dentro de Competencia: 8. Valor al negocio</li>
+          </ul>
+      </ul>
+         
+      <ul>
+       <li>De lo contrario, si el Perfil de evaluación en [OPERACIÓN; LÍDER OPERACIÓN; LÍDER OPERACIÓN COMERCIAL], entonces:</li>
+          <ul>
+              <li>Crear dentro de Competencia: 9. Ejecución</li>
+              <li>Crear dentro de Competencia: 10. Organización</li>
+              <li>Crear dentro de Competencia: 11. Eficiencia </li>
+          </ul>
+      </ul>
+
+        <ul>
+          <li>Comprobar si es líder y crear competencias</li>
+        </ul>
+
+      <ul>
+       <li>Si el Perfil de evaluación en [OPERACIÓN; LÍDER OPERACIÓN; LÍDER OPERACIÓN COMERCIAL], entonces:</li>
+
+          <ul>
+              <li>Crear dentro de Competencias: 12. Liderazgo y desarrollo de las personas</li>
+              <li>Crear dentro de Competencias: 13. Planeamiento y control</li>
+          </ul>
+      </ul>
+
+       <li>Calcula Contribuciones Incompletas</li>
+       <li>Calcula Competencias Incompletas</li>
+       <li>Calcula Preguntas Totales de Competencia</li>
+       <li>Actualiza marca de reunión de calibración en el jefe (actualiza el nombre del evaluador)</li>  
+    
+       <br>
+
+       <p><strong>Proceso: Evaluación de desempeño -2- actualiza estado en la pregunta</strong></p>
+       <ul>
+          <li>Comprobar estado</li>
+             <ul>
+              <li> Si el Estado no es igual a [Feedback realizado], entonces: Detener flujo de trabajo con el estado de:  Correcto</li>
+              <li> De lo contrario si el Estado es igual a [Feedback realizado], entonces: Actualiza el Estado de la evaluación en la pregunta</li>
+             </ul>
+       </ul>
+
+        <br>
+
+       <p><strong>Proceso: Evaluación de desempeño -3- Actualiza Perfil de evaluación en el RRHH</strong></p>
+       
+       <ul>
+          <li>Comprobar perfil de evaluación</li>
+             <ul>
+              <li>Si el Perfil de evaluación no contiene datos, entonces: Detener flujo de trabajo con el estado de:  Correcto</li>
+              <li>De lo contrario si Perfil de evaluación contiene datos, entonces: Actualiza el perfil de evaluación en el contacto (Nombre y Apellido del colaborador)</li>
+             </ul>
+       </ul>
+
+       <br>
+
+       <p><strong>Proceso: Evaluación de desempeño -4- Envía solicitud conformidad de feedback PORTAL</strong></p>
+
+       <ul>
+        <li>Obtener el guid de la evaluación</li>
+        <li>Actualizar GUID y nombre del colaborador en la evaluación</li>
+        <li>Compone URL de la evaluación – Colaborador</li>
+        <li>Compone URL de la evaluación – Jefe</li>
+        <li>Comprobar confirmaciones</li>
+          <ul>
+            <li> Si: Conformidad colaborador y evaluador contienen datos, entonces: Detener flujo de trabajo con el estado de:  Correcto</li>
+          </ul>       
+        <li>Comprobar Confirmación Jefe</li>
+          <ul>
+            <li> Si: Conformidad evaluador no contiene datos, entonces: Actualiza fecha de envío de solicitud</li>
+          </ul>
+        <li>Comprobar Confirmación Colaborador</li>
+          <ul>
+            <li>Si: Conformidad colaborador no contiene datos, entonces: Actualiza fecha de envío de solicitud</li>
+          </ul>
+     </ul>
+
+     <br>
+
+     <p><strong>Proceso: Evaluación de desempeño -5- Actualiza evaluación en la invitación encuesta de confirmación feedback</strong></p>
+
+     <li>Comprobar asunto de la invitación</li>
+          <ul>
+            <li>Si el Asunto es igual a [Liderando las Conversaciones – Confirmación Reunión de Feedback], entonces: Actualizar evaluación (actualiza la actividad de la encuesta)</li>
+          </ul>
+
+      <br>
+
+      <p><strong>Proceso: Evaluación de desempeño -6- Actualiza Respuesta a pregunta desde Respuesta encuesta</strong></p>
+
+      <li>Esperar 1 minuto</li>
+          <ul>
+            <li>Tiempo de espera hasta 1 Minuto Después de Proceso-Tiempo de ejecución y después: Actualizar evaluación de desempeño</li>
+            <li>Inicia flujo para actualizar Fechas en la encuesta (Iniciar flujo de trabajo secundario: Respuesta a pregunta: Evaluación de desempeño -7- actualiza fechas de conformidad de feedback)</li>
+          </ul>
+
+      <br>
+        
+      <p><strong>Proceso: Evaluación de desempeño -7- Actualiza fechas de conformidad de feedback</strong></p>
+
+      <li>Comprobar si es de Evaluación de desempeño</li>
+          <ul>
+            <li> Si Respuesta de la encuesta no contiene datos, entonces: Detener flujo de trabajo con el estado de:  Correcto</li>
+            <li>De lo contrario, Si Respuesta de la encuesta contiene datos, entonces: Actualiza Evaluación de desempeño (actualiza Respuesta a pregunta)</li>
+            <ul>
+              <li>Comprobar respuesta de:</li>
+              <ul>
+                <li>Si Respuesta a pregunta es de [Liderando las Conversaciones - Colaborador], entonces: Actualiza fecha de conformidad Colaborador</li>
+                <li>De lo contrario, Si Respuesta a pregunta es de [Liderando las Conversaciones - Jefe], entonces: Actualiza fecha de conformidad del jefe</li>
+              </ul>
+            </ul>
+          </ul>
+
+          <br>
+
+          <p><strong>Proceso: Evaluación de desempeño -8- Actualiza marca de conformidad de feedback</strong></p>
+
+          <li>Comprobar si ambos han dado la conformidad del feedback</li>
+              <ul>
+                <li>Si la Evaluación Realizada (Evaluado) es igual a [Sí], entonces:  Conformidad feedback = Sí</li>
+                <li>De lo contrario, Si la Evaluación Realizada (Evaluado) es igual a [No], entonces:  Conformidad feedback = No</li>
+              </ul>
+      </div>
+    </div>
   </div>
 
   
