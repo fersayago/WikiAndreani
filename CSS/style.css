@@ -25,3 +25,9 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
+
+footer{
+    text-align: center;
+    background-color: #c5171d;
+    height: 15vh;
+}
