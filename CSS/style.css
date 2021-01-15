@@ -3,7 +3,7 @@
 }
 
 section {
-    padding: 6rem 0;
+    /*padding: 6rem 0;*/
 }
 
 p,li{
@@ -31,3 +31,63 @@ footer{
     background-color: #c5171d;
     height: 15vh;
 }
+.btn{
+    background-color: #d71920;
+    border:none;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
+  
+.Contactos-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.Contactos-list-title {
+    text-align: center;
+  }
+.Contactos { 
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background:#d71920;
+    align-content: center;
+  }
+.Contactos img {
+    width: 480px;
+    height: 350px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+.Contactos-detail {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border:2px solid black;
+  }
+.Contactos-description {
+    text-align: center;
+  }
+  
+.Contactos-url {
+    color: #d71920;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
