@@ -3,7 +3,7 @@
 }
 
 section {
-    /*padding: 6rem 0;*/
+  padding: 6rem 0;
 }
 
 p,li{
@@ -36,9 +36,9 @@ footer{
     border:none;
   }
 
-  .container {
+/* .container {
     width: 1000px;
-    margin: 0 auto;
+    margin: auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -90,4 +90,43 @@ footer{
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 5px;
-  }
+  } */
+
+.card-border {
+  border: solid 10px #d71920;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+  transform: scale(1.03);
+}
+
+.btnSoporte {
+    background-color: white;
+    color: #d71920;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btnSoporte:hover {
+  background-color: #d71920;
+  color: black;
+}
+
+.card-bodySoporte {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    border:2px solid black;
+}
+
+.cardSoporte {
+  background-color: #d71920;
+}
